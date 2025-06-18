@@ -1,0 +1,1308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gray-950 text-foreground;
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+  }
+}
+
+/* Tech Name Logo Styling */
+.tech-name-logo {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(147, 51, 234, 0.2), 0 0 60px rgba(6, 182, 212, 0.1);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8), 0 0 60px rgba(147, 51, 234, 0.4);
+  }
+}
+
+@keyframes neural-pulse {
+  0%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes ping-pong-ball {
+  0% {
+    transform: translateX(-80px) translateY(0px);
+  }
+  25% {
+    transform: translateX(-20px) translateY(-15px);
+  }
+  50% {
+    transform: translateX(20px) translateY(0px);
+  }
+  75% {
+    transform: translateX(80px) translateY(-15px);
+  }
+  100% {
+    transform: translateX(-80px) translateY(0px);
+  }
+}
+
+@keyframes neural-node-1 {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes neural-node-2 {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes neural-node-3 {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes neural-node-4 {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes gan-processor {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(147, 51, 234, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1) rotate(180deg);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.8), 0 0 30px rgba(236, 72, 153, 0.4);
+  }
+}
+
+@keyframes data-flow-1 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 1;
+    width: 64px;
+  }
+  100% {
+    opacity: 0;
+    width: 64px;
+  }
+}
+
+@keyframes data-flow-2 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 1;
+    width: 64px;
+  }
+  100% {
+    opacity: 0;
+    width: 64px;
+  }
+}
+
+@keyframes data-flow-3 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 1;
+    width: 64px;
+  }
+  100% {
+    opacity: 0;
+    width: 64px;
+  }
+}
+
+@keyframes data-flow-4 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 1;
+    width: 64px;
+  }
+  100% {
+    opacity: 0;
+    width: 64px;
+  }
+}
+
+@keyframes generated-image-1 {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateX(-50%) scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(-50%) scale(1.2);
+  }
+}
+
+@keyframes generated-image-2 {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateX(-50%) scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(-50%) scale(1.2);
+  }
+}
+
+@keyframes gan-particle-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translateY(-8px);
+  }
+}
+
+@keyframes gan-particle-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.3) rotate(180deg);
+  }
+}
+
+@keyframes gan-particle-3 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(5px) translateY(-5px);
+  }
+}
+
+@keyframes paddle-left {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  75% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes paddle-right {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(8px);
+  }
+  75% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes particle-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes particle-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes particle-3 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation Classes */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+.neural-network {
+  animation: neural-pulse 2s ease-in-out infinite;
+}
+
+.animate-ping-pong-ball {
+  animation: ping-pong-ball 3s ease-in-out infinite;
+}
+.animate-paddle-left {
+  animation: paddle-left 3s ease-in-out infinite;
+}
+.animate-paddle-right {
+  animation: paddle-right 3s ease-in-out infinite;
+}
+.animate-particle-1 {
+  animation: particle-1 2s ease-in-out infinite;
+}
+.animate-particle-2 {
+  animation: particle-2 2.5s ease-in-out infinite 0.5s;
+}
+.animate-particle-3 {
+  animation: particle-3 1.8s ease-in-out infinite 1s;
+}
+
+.animate-neural-node-1 {
+  animation: neural-node-1 2s ease-in-out infinite;
+}
+.animate-neural-node-2 {
+  animation: neural-node-2 2s ease-in-out infinite 0.5s;
+}
+.animate-neural-node-3 {
+  animation: neural-node-3 2s ease-in-out infinite 1s;
+}
+.animate-neural-node-4 {
+  animation: neural-node-4 2s ease-in-out infinite 1.5s;
+}
+.animate-gan-processor {
+  animation: gan-processor 3s ease-in-out infinite;
+}
+.animate-data-flow-1 {
+  animation: data-flow-1 2s ease-in-out infinite;
+}
+.animate-data-flow-2 {
+  animation: data-flow-2 2s ease-in-out infinite 0.5s;
+}
+.animate-data-flow-3 {
+  animation: data-flow-3 2s ease-in-out infinite 1s;
+}
+.animate-data-flow-4 {
+  animation: data-flow-4 2s ease-in-out infinite 1.5s;
+}
+.animate-generated-image-1 {
+  animation: generated-image-1 3s ease-in-out infinite;
+}
+.animate-generated-image-2 {
+  animation: generated-image-2 3s ease-in-out infinite 1.5s;
+}
+.animate-gan-particle-1 {
+  animation: gan-particle-1 2.5s ease-in-out infinite;
+}
+.animate-gan-particle-2 {
+  animation: gan-particle-2 3s ease-in-out infinite 0.8s;
+}
+.animate-gan-particle-3 {
+  animation: gan-particle-3 2s ease-in-out infinite 1.2s;
+}
+
+/* Resume Optimizer Animations */
+@keyframes resume-doc {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes text-line-1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes text-line-2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes text-line-3 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes ai-processor {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.8), 0 0 30px rgba(20, 184, 166, 0.4);
+  }
+}
+
+@keyframes optimized-resume {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes optimized-line-1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes optimized-line-2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes optimized-line-3 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes keyword-particle-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translateY(-5px);
+  }
+}
+
+@keyframes keyword-particle-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+/* Vision Classifier Animations */
+@keyframes input-image {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes vision-processor {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(99, 102, 241, 0.4);
+  }
+}
+
+@keyframes classification-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+@keyframes classification-2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+@keyframes classification-3 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
+
+@keyframes vision-particle-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translateY(-3px);
+  }
+}
+
+@keyframes vision-particle-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.3) rotate(180deg);
+  }
+}
+
+/* Chatbot Animations */
+@keyframes user-message {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes typing-1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes typing-2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 60%;
+    opacity: 1;
+  }
+  100% {
+    width: 60%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes chatbot-brain {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(147, 51, 234, 0.4);
+  }
+}
+
+@keyframes bot-response {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes response-1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes response-2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 80%;
+    opacity: 1;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+@keyframes chat-particle-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translateY(-5px);
+  }
+}
+
+@keyframes chat-particle-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+/* Freelancer Assistant Animations */
+@keyframes client-brief {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes proposal-generator {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.8), 0 0 30px rgba(245, 158, 11, 0.4);
+  }
+}
+
+@keyframes generated-proposal {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes proposal-line-1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes proposal-line-2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes proposal-line-3 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes skill-match-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translateY(-5px);
+  }
+}
+
+@keyframes skill-match-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+/* Music Mood Tagger Animations */
+@keyframes audio-wave {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes mood-analyzer {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.8), 0 0 30px rgba(244, 63, 94, 0.4);
+  }
+}
+
+@keyframes mood-tag-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+@keyframes mood-tag-2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
+
+@keyframes mood-tag-3 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+@keyframes audio-bar-1 {
+  0%,
+  100% {
+    height: 8px;
+    opacity: 0.6;
+  }
+  50% {
+    height: 12px;
+    opacity: 1;
+  }
+}
+
+@keyframes audio-bar-2 {
+  0%,
+  100% {
+    height: 12px;
+    opacity: 0.7;
+  }
+  50% {
+    height: 16px;
+    opacity: 1;
+  }
+}
+
+@keyframes audio-bar-3 {
+  0%,
+  100% {
+    height: 4px;
+    opacity: 0.5;
+  }
+  50% {
+    height: 8px;
+    opacity: 1;
+  }
+}
+
+@keyframes paddle-left {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  75% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes paddle-right {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(8px);
+  }
+  75% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes particle-1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes particle-2 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes particle-3 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation Classes */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+.neural-network {
+  animation: neural-pulse 2s ease-in-out infinite;
+}
+
+.animate-ping-pong-ball {
+  animation: ping-pong-ball 3s ease-in-out infinite;
+}
+.animate-paddle-left {
+  animation: paddle-left 3s ease-in-out infinite;
+}
+.animate-paddle-right {
+  animation: paddle-right 3s ease-in-out infinite;
+}
+.animate-particle-1 {
+  animation: particle-1 2s ease-in-out infinite;
+}
+.animate-particle-2 {
+  animation: particle-2 2.5s ease-in-out infinite 0.5s;
+}
+.animate-particle-3 {
+  animation: particle-3 1.8s ease-in-out infinite 1s;
+}
+
+.animate-neural-node-1 {
+  animation: neural-node-1 2s ease-in-out infinite;
+}
+.animate-neural-node-2 {
+  animation: neural-node-2 2s ease-in-out infinite 0.5s;
+}
+.animate-neural-node-3 {
+  animation: neural-node-3 2s ease-in-out infinite 1s;
+}
+.animate-neural-node-4 {
+  animation: neural-node-4 2s ease-in-out infinite 1.5s;
+}
+.animate-gan-processor {
+  animation: gan-processor 3s ease-in-out infinite;
+}
+.animate-data-flow-1 {
+  animation: data-flow-1 2s ease-in-out infinite;
+}
+.animate-data-flow-2 {
+  animation: data-flow-2 2s ease-in-out infinite 0.5s;
+}
+.animate-data-flow-3 {
+  animation: data-flow-3 2s ease-in-out infinite 1s;
+}
+.animate-data-flow-4 {
+  animation: data-flow-4 2s ease-in-out infinite 1.5s;
+}
+.animate-generated-image-1 {
+  animation: generated-image-1 3s ease-in-out infinite;
+}
+.animate-generated-image-2 {
+  animation: generated-image-2 3s ease-in-out infinite 1.5s;
+}
+.animate-gan-particle-1 {
+  animation: gan-particle-1 2.5s ease-in-out infinite;
+}
+.animate-gan-particle-2 {
+  animation: gan-particle-2 3s ease-in-out infinite 0.8s;
+}
+.animate-gan-particle-3 {
+  animation: gan-particle-3 2s ease-in-out infinite 1.2s;
+}
+
+/* Resume Optimizer Animations */
+.animate-resume-doc {
+  animation: resume-doc 3s ease-in-out infinite;
+}
+.animate-text-line-1 {
+  animation: text-line-1 2s ease-in-out infinite;
+}
+.animate-text-line-2 {
+  animation: text-line-2 2s ease-in-out infinite 0.3s;
+}
+.animate-text-line-3 {
+  animation: text-line-3 2s ease-in-out infinite 0.6s;
+}
+.animate-ai-processor {
+  animation: ai-processor 3s ease-in-out infinite;
+}
+.animate-optimized-resume {
+  animation: optimized-resume 3s ease-in-out infinite 1s;
+}
+.animate-optimized-line-1 {
+  animation: optimized-line-1 2.5s ease-in-out infinite 1s;
+}
+.animate-optimized-line-2 {
+  animation: optimized-line-2 2.5s ease-in-out infinite 1.3s;
+}
+.animate-optimized-line-3 {
+  animation: optimized-line-3 2.5s ease-in-out infinite 1.6s;
+}
+.animate-keyword-particle-1 {
+  animation: keyword-particle-1 2.5s ease-in-out infinite;
+}
+.animate-keyword-particle-2 {
+  animation: keyword-particle-2 3s ease-in-out infinite 0.8s;
+}
+
+/* Vision Classifier Animations */
+.animate-input-image {
+  animation: input-image 3s ease-in-out infinite;
+}
+.animate-vision-processor {
+  animation: vision-processor 3s ease-in-out infinite;
+}
+.animate-classification-1 {
+  animation: classification-1 2.5s ease-in-out infinite 0.5s;
+}
+.animate-classification-2 {
+  animation: classification-2 2.5s ease-in-out infinite 1s;
+}
+.animate-classification-3 {
+  animation: classification-3 2.5s ease-in-out infinite 1.5s;
+}
+.animate-vision-particle-1 {
+  animation: vision-particle-1 2.5s ease-in-out infinite;
+}
+.animate-vision-particle-2 {
+  animation: vision-particle-2 3s ease-in-out infinite 0.8s;
+}
+
+/* Chatbot Animations */
+.animate-user-message {
+  animation: user-message 3s ease-in-out infinite;
+}
+.animate-typing-1 {
+  animation: typing-1 2s ease-in-out infinite;
+}
+.animate-typing-2 {
+  animation: typing-2 2s ease-in-out infinite 0.3s;
+}
+.animate-chatbot-brain {
+  animation: chatbot-brain 3s ease-in-out infinite;
+}
+.animate-bot-response {
+  animation: bot-response 3s ease-in-out infinite 1s;
+}
+.animate-response-1 {
+  animation: response-1 2.5s ease-in-out infinite 1s;
+}
+.animate-response-2 {
+  animation: response-2 2.5s ease-in-out infinite 1.3s;
+}
+.animate-chat-particle-1 {
+  animation: chat-particle-1 2.5s ease-in-out infinite;
+}
+.animate-chat-particle-2 {
+  animation: chat-particle-2 3s ease-in-out infinite 0.8s;
+}
+
+/* Freelancer Assistant Animations */
+.animate-client-brief {
+  animation: client-brief 3s ease-in-out infinite;
+}
+.animate-proposal-generator {
+  animation: proposal-generator 3s ease-in-out infinite;
+}
+.animate-generated-proposal {
+  animation: generated-proposal 3s ease-in-out infinite 1s;
+}
+.animate-proposal-line-1 {
+  animation: proposal-line-1 2.5s ease-in-out infinite 1s;
+}
+.animate-proposal-line-2 {
+  animation: proposal-line-2 2.5s ease-in-out infinite 1.3s;
+}
+.animate-proposal-line-3 {
+  animation: proposal-line-3 2.5s ease-in-out infinite 1.6s;
+}
+.animate-skill-match-1 {
+  animation: skill-match-1 2.5s ease-in-out infinite;
+}
+.animate-skill-match-2 {
+  animation: skill-match-2 3s ease-in-out infinite 0.8s;
+}
+
+/* Music Mood Tagger Animations */
+.animate-audio-wave {
+  animation: audio-wave 3s ease-in-out infinite;
+}
+.animate-mood-analyzer {
+  animation: mood-analyzer 3s ease-in-out infinite;
+}
+.animate-mood-tag-1 {
+  animation: mood-tag-1 2.5s ease-in-out infinite 0.5s;
+}
+.animate-mood-tag-2 {
+  animation: mood-tag-2 2.5s ease-in-out infinite 1s;
+}
+.animate-mood-tag-3 {
+  animation: mood-tag-3 2.5s ease-in-out infinite 1.5s;
+}
+.animate-audio-bar-1 {
+  animation: audio-bar-1 2.5s ease-in-out infinite 0.5s;
+}
+.animate-audio-bar-2 {
+  animation: audio-bar-2 2.5s ease-in-out infinite 1s;
+}
+.animate-audio-bar-3 {
+  animation: audio-bar-3 2.5s ease-in-out infinite 1.5s;
+}
+.animate-paddle-left {
+  animation: paddle-left 3s ease-in-out infinite;
+}
+.animate-paddle-right {
+  animation: paddle-right 3s ease-in-out infinite;
+}
+.animate-particle-1 {
+  animation: particle-1 2s ease-in-out infinite;
+}
+.animate-particle-2 {
+  animation: particle-2 2.5s ease-in-out infinite 0.5s;
+}
+.animate-particle-3 {
+  animation: particle-3 1.8s ease-in-out infinite 1s;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.glow-border {
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1), inset 0 0 20px rgba(59, 130, 246, 0.05);
+}
+
+.glow-border-purple {
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.1), inset 0 0 20px rgba(147, 51, 234, 0.05);
+}
+
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+}
+
+.tech-grid {
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+}
