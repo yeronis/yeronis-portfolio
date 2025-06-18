@@ -22,11 +22,11 @@ export default function Education() {
       gradient: "from-blue-500 to-purple-600",
     },
     {
-      degree: "Bachelor's in Mechatronics Engineering",
+      degree: "Bachelor's in Software Engineering",
       institution: "University of Agder",
       year: "2021",
       description:
-        "Comprehensive engineering education combining mechanical, electrical, and computer engineering principles. Focused on robotics, automation systems, and intelligent control mechanisms with hands-on project experience.",
+        "Comprehensive engineering education combining computer engineering principles. Focused on robotics, web-development, game-development, and intelligent control mechanisms with hands-on project experience.",
       skills: [
         "Robotics",
         "Automation",
