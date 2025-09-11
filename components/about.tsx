@@ -11,7 +11,7 @@ export default function About() {
             <CardContent className="p-8">
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p className="text-lg">
-                  Driven software engineer with a Master's in Artificial Intelligence and a Bachelor's in Mechatronics
+                  Driven software engineer with a Master's in Artificial Intelligence and a Bachelor's in Computer/Software
                   Engineering, equipped with expertise in computer vision, deep learning, and reinforcement learning.
                 </p>
 
