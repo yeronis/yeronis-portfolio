@@ -5,72 +5,40 @@ import { Briefcase, Calendar, MapPin } from "lucide-react"
 export default function Experience() {
   const experiences = [
     {
-      title: "AI Specialist",
+      title: "AI Intern",
       company: "Mechatronics Innovation Lab (MIL)",
       period: "2023",
       type: "work",
       description:
-        "Led advancements in 3D printing technology for cement applications, focusing on AI and machine learning implementations. Built and annotated comprehensive datasets, developed sophisticated models, and performed rigorous testing for accuracy optimization in industrial applications.",
-      skills: [
-        "Machine Learning",
-        "Dataset Creation",
-        "Model Development",
-        "3D Printing",
-        "Geometric Analysis",
-        "Industrial AI",
-      ],
+        "Contributed to AI and machine-learning work for 3D concrete printing. Worked with camera recordings, image extraction and annotation, model development and testing, and geometric width analysis to support evaluation of printing quality and accuracy.",
+      skills: ["Computer Vision", "Machine Learning", "Data Annotation", "Model Development", "Geometric Analysis", "3D Concrete Printing"],
     },
     {
-      title: "Private AI Instructor",
+      title: "Founder & CEO",
+      company: "Hubena Imports",
+      period: "Current",
+      type: "business",
+      description:
+        "Developing an early-stage coffee import business connecting Ethiopian suppliers with the Norwegian market. Established a supplier relationship in Ethiopia and currently exploring roasting, packaging and distribution partnerships in Norway.",
+      skills: ["Supplier Relations", "Business Development", "International Communication", "Commercial Discussions"],
+    },
+    {
+      title: "Online Tutor – Mathematics & Programming",
       company: "Superprof",
       period: "2021 – Present",
       type: "work",
       description:
-        "Delivering specialized lessons in key AI domains including deep learning, computer vision, reinforcement learning, and AI applications for real-world use cases. Mentoring students in advanced programming concepts and cutting-edge AI methodologies.",
-      skills: [
-        "Deep Learning",
-        "Computer Vision",
-        "Reinforcement Learning",
-        "Python",
-        "AI Applications",
-        "Technical Mentoring",
-      ],
+        "Provide educational support in mathematics and programming, including Python and C#, adapting explanations to different student levels and technical backgrounds.",
+      skills: ["Python", "C#", "Mathematics", "Technical Communication", "Teaching"],
     },
     {
-      title: "Personal Assistant",
-      company: "ULOBA BPA",
-      period: "January 2025 – Present",
+      title: "Additional Professional Experience",
+      company: "Support services, childcare & hospitality",
+      period: "2017 – Present",
       type: "work",
       description:
-        "Assisting individuals with physical and mental disabilities, offering personalized support to enhance their daily experiences and quality of life through compassionate care and adaptive solutions.",
-      skills: ["Interpersonal Skills", "Problem Solving", "Adaptability", "Compassionate Care", "Personal Support"],
-    },
-    {
-      title: "Personal Assistant",
-      company: "MIO BPA",
-      period: "Aug 2024 – Present",
-      type: "work",
-      description:
-        "Assisting individuals with physical and mental disabilities, offering personalized support to enhance their daily experiences and quality of life through compassionate care and adaptive solutions.",
-      skills: ["Interpersonal Skills", "Problem Solving", "Adaptability", "Compassionate Care", "Personal Support"],
-    },
-    {
-      title: "Kindergarten Teacher",
-      company: "Adecco",
-      period: "2021 – Present",
-      type: "work",
-      description:
-        "Provided comprehensive childcare for ages 0-6, managing classroom activities and fostering a nurturing educational environment. Developed exceptional organizational and stress management skills through effective multitasking and creative problem-solving.",
-      skills: ["Childcare", "Organization", "Stress Management", "Creativity", "Patience", "Educational Development"],
-    },
-    {
-      title: "Hotel Meeting Room Supervisor",
-      company: "Scandic Hotel",
-      period: "2017 – 2018",
-      type: "work",
-      description:
-        "Supervised meeting room preparations and equipment management for high-profile corporate events, ensuring seamless operations and exceptional service delivery. Coordinated with multiple departments to deliver outstanding customer experiences.",
-      skills: ["Customer Service", "Event Management", "Time Management", "Attention to Detail", "Team Coordination"],
+        "Additional roles alongside studies and technical development strengthened responsibility, adaptability, communication, organisation and the ability to work effectively with people in varied environments.",
+      skills: ["Communication", "Responsibility", "Adaptability", "Organisation", "Teamwork"],
     },
   ]
 

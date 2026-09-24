@@ -9,7 +9,7 @@ export default function Education() {
       institution: "University of Agder",
       year: "2024",
       description:
-        "Advanced studies in artificial intelligence with specialization in deep learning, computer vision, reinforcement learning, and neural network architectures. Conducted research in cutting-edge AI applications and ethical AI development.",
+        "Master’s studies in artificial intelligence covering deep learning, computer vision, reinforcement learning, neural networks, research methodology and responsible AI.",
       skills: [
         "Deep Learning",
         "Computer Vision",
@@ -26,14 +26,13 @@ export default function Education() {
       institution: "University of Agder",
       year: "2021",
       description:
-        "Comprehensive engineering education combining computer engineering principles. Focused on robotics, web-development, game-development, and intelligent control mechanisms with hands-on project experience.",
+        "Software engineering education with programming, software development and project-based work across multiple technologies and application areas.",
       skills: [
-        "Robotics",
-        "Automation",
-        "Control Systems",
-        "Mechanical Engineering",
-        "Electrical Engineering",
+        "Software Engineering",
         "Programming",
+        "Software Development",
+        "Web Development",
+        "Project Work",
       ],
       icon: "⚙️",
       gradient: "from-purple-500 to-pink-500",

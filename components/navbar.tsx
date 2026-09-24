@@ -49,8 +49,8 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 pulse-glow">
-            Download CV
+          <Button asChild className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 pulse-glow">
+            <a href="/Yeronis_Hubena_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
           </Button>
         </nav>
 
@@ -74,8 +74,8 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 w-full">
-              Download CV
+            <Button asChild className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 w-full">
+              <a href="/Yeronis_Hubena_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
             </Button>
           </div>
         </div>

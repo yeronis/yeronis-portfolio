@@ -11,14 +11,11 @@ export default function About() {
             <CardContent className="p-8">
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p className="text-lg">
-                  Driven software engineer with a Master's in Artificial Intelligence and a Bachelor's in Computer/Software
-                  Engineering, equipped with expertise in computer vision, deep learning, and reinforcement learning.
+                  Artificial Intelligence Engineer with a Master's in Artificial Intelligence and a Bachelor's in Software Engineering from the University of Agder, with a background in computer vision, deep learning, reinforcement learning and software development.
                 </p>
 
                 <p>
-                  Experienced in designing and deploying machine learning models, creating data-driven solutions, and
-                  optimizing software applications. Skilled in balancing technical work with people-centered roles,
-                  including tutoring and caregiving, demonstrating adaptability and strong interpersonal skills.
+                  My work and projects include AI-assisted 3D concrete printing, underwater image analysis, reinforcement learning, predictive modelling and application development. I also enjoy taking initiative beyond engineering, including teaching programming and building an early-stage import business connecting suppliers in Ethiopia with opportunities in Norway.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-700">

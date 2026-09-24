@@ -14,7 +14,7 @@ export default function Skills() {
     },
     {
       title: "Machine Learning & AI",
-      skills: ["Deep Learning", "Reinforcement Learning", "Computer Vision", "Robotics", "Autonomous Systems"],
+      skills: ["Machine Learning", "Deep Learning", "Reinforcement Learning", "Computer Vision", "Predictive Modelling"],
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -23,8 +23,8 @@ export default function Skills() {
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "DevOps & Deployment",
-      skills: ["Model Deployment", "Performance Monitoring", "Self-taught DevOps"],
+      title: "Tools & Engineering",
+      skills: ["Git", "Linux / Ubuntu", "VS Code", "Arduino", "Data Annotation", "Geometric Analysis"],
       color: "from-orange-500 to-red-500",
     },
     {
@@ -71,30 +71,13 @@ export default function Skills() {
             ))}
           </div>
 
-          {/* Interactive Skill Showcase */}
+          {/* Current development areas — intentionally shown without percentage ratings */}
           <div className="mt-16 text-center">
             <div className="glow-border bg-gray-900/50 backdrop-blur-sm rounded-lg p-8 card-3d">
-              <h3 className="text-2xl font-semibold mb-6 glow-text">Core Competencies</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[
-                  { name: "Computer Vision", level: 95, icon: "👁️" },
-                  { name: "Deep Learning", level: 90, icon: "🧠" },
-                  { name: "Python", level: 95, icon: "🐍" },
-                  { name: "Reinforcement Learning", level: 85, icon: "🤖" },
-                ].map((skill, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl mb-2">{skill.icon}</div>
-                    <h4 className="font-medium mb-2">{skill.name}</h4>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-1000"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                    <span className="text-sm text-gray-400">{skill.level}%</span>
-                  </div>
-                ))}
-              </div>
+              <h3 className="text-2xl font-semibold mb-4 glow-text">Current Technical Development</h3>
+              <p className="text-gray-300 max-w-3xl mx-auto">
+                Expanding hands-on experience with Arduino, sensor and serial integration, and introductory ROS2 through a small mobile robot project.
+              </p>
             </div>
           </div>
         </div>

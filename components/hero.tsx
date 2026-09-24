@@ -141,8 +141,8 @@ export default function Hero() {
                 </div>
 
                 <div className="space-y-2">
-                  <h2 className="text-xl md:text-2xl font-semibold text-gray-300">Software Engineer & AI Specialist</h2>
-                  <p className="text-lg text-blue-400 font-medium">(Sivilingeniør)</p>
+                  <h2 className="text-xl md:text-2xl font-semibold text-gray-300">Artificial Intelligence Engineer</h2>
+                  <p className="text-lg text-blue-400 font-medium">AI • Computer Vision • Software Development</p>
                 </div>
 
                 {/* Enhanced specialization tags */}
@@ -166,18 +166,18 @@ export default function Hero() {
                     style={{ animationDelay: "1s" }}
                   ></div>
                   <span className="text-emerald-400 hover:text-emerald-300 transition-colors cursor-default hover:glow-text">
-                    AI-Powered Web Development
+                    Software Development
                   </span>
                 </div>
 
                 <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl">
-                  Crafting intelligent solutions through advanced machine learning, computer vision, and deep learning
-                  technologies. Passionate about creating data-driven innovations that make a meaningful impact.
+                  Building practical AI solutions through machine learning, computer vision and software development. Interested in applying intelligent software to real-world technical systems.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
+                  onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
                   size="lg"
                   className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-lg px-8 py-4 group"
                 >
@@ -185,6 +185,7 @@ export default function Hero() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button
+                  onClick={() => window.open("/Yeronis_Hubena_CV.pdf", "_blank")}
                   variant="outline"
                   size="lg"
                   className="glow-border text-lg px-8 py-4 hover:bg-blue-500/10 group"

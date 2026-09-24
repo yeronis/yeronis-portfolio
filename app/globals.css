@@ -1306,3 +1306,14 @@ html {
 .tech-grid {
   background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
 }
+
+/* Portfolio project-card micro animations */
+@keyframes card-scan { 0%,100%{transform:translateX(-90px);opacity:.15} 50%{transform:translateX(90px);opacity:.9} }
+@keyframes card-drift { 0%,100%{transform:translateX(-24px) translateY(2px)} 50%{transform:translateX(24px) translateY(-4px)} }
+@keyframes card-pingpong { 0%,100%{transform:translateX(-105px) translateY(-8px)} 50%{transform:translateX(105px) translateY(8px)} }
+@keyframes card-layer { 0%{width:15%;opacity:.3} 50%{width:72%;opacity:1} 100%{width:15%;opacity:.3} }
+@keyframes card-heart { 0%,100%{transform:scale(1)} 15%{transform:scale(1.2)} 30%{transform:scale(1)} 45%{transform:scale(1.14)} 60%{transform:scale(1)} }
+@keyframes card-wave { 0%{transform:scale(.45);opacity:.9} 100%{transform:scale(1.8);opacity:0} }
+@keyframes card-book { 0%,100%{transform:translateX(-35px) rotate(-4deg)} 50%{transform:translateX(35px) rotate(4deg)} }
+@keyframes card-generate { 0%,100%{transform:rotate(0deg) scale(.8);border-radius:30%} 50%{transform:rotate(180deg) scale(1.15);border-radius:50%} }
+.project-scan{animation:card-scan 2.4s ease-in-out infinite}.project-drift{animation:card-drift 3.2s ease-in-out infinite}.project-ball{animation:card-pingpong 2.2s ease-in-out infinite}.project-layer{animation:card-layer 2.5s ease-in-out infinite}.project-heart{animation:card-heart 1.6s ease-in-out infinite}.project-wave{animation:card-wave 1.8s ease-out infinite}.project-book{animation:card-book 3s ease-in-out infinite}.project-generate{animation:card-generate 3s ease-in-out infinite}
